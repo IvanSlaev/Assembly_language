@@ -1,3 +1,5 @@
+tar = hello_linux
+
 $(tar): $(tar).o
 	ld -o $@ $<
 

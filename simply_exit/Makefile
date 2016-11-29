@@ -1,3 +1,5 @@
+tar = simply_exit
+
 $(tar): $(tar).o
 	ld -o $@ $<
 
