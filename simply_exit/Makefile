@@ -1,7 +1,8 @@
-tar = simply_exit
+TAR = variables
+FLAGS = -gstabs
 
-$(tar): $(tar).o
+$(TAR): $(TAR).o
 	ld -o $@ $<
 
-$(tar).o: $(tar).s
-	as -o $@ $<
+$(TAR).o: $(TAR).s
+	as -o $@ $(FLAGS) $<

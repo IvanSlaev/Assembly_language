@@ -1,4 +1,3 @@
-TAR = variables
 FLAGS = -gstabs
 
 $(TAR): $(TAR).o
@@ -6,3 +5,6 @@ $(TAR): $(TAR).o
 
 $(TAR).o: $(TAR).s
 	as -o $@ $(FLAGS) $<
+
+clean:
+	rm -f $(TAR).*
